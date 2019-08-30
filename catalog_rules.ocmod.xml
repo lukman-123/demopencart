@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<code>Catalog Rules</code>
+	<name>Catalog Rules</name>
+	<version>v2.0</version>
+	<file path="catalog/controller/module/featured.php">
+		<operation>
+			<search><![CDATA[$price = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+                if($this->config->get('catalogrules_discount_status') == 1)
+				{
+				  $discoutPrice = $this->config->get('catalogrules_price');
+				  $afterDiscount = $product_info['price'] - $discoutPrice;
+				  $price = $this->currency->format($this->tax->calculate($afterDiscount, $product_info['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			      $price = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$special = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+               if($this->config->get('catalogrules_discount_status') == 1)
+			   {
+				$discoutPriceSpecial = $this->config->get('catalogrules_price');
+				$afterDiscountSpecial = $product_info['special'] - $discoutPriceSpecial;
+				$special = $this->currency->format($this->tax->calculate($afterDiscountSpecial, $product_info['tax_class_id'], $this->config->get('config_tax')));
+			   }else
+			   {
+			    $special = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+			   }
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/latest.php">
+		<operation>
+			<search><![CDATA[$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+       	        if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['price'] - $discoutPrice;
+					$price = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+                if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['special'] - $discoutPrice;
+					$special = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/special.php">
+		<operation>
+			<search><![CDATA[$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+       	        if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['price'] - $discoutPrice;
+					$price = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+                if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['special'] - $discoutPrice;
+					$special = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/bestseller.php">
+		<operation>
+			<search><![CDATA[$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+       	        if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['price'] - $discoutPrice;
+					$price = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+                if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['special'] - $discoutPrice;
+					$special = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/product/category.php">
+		<operation>
+			<search><![CDATA[$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+       	        if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['price'] - $discoutPrice;
+					$price = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+                if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $result['special'] - $discoutPrice;
+					$special = $this->currency->format($this->tax->calculate($afterDiscount, $result['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/product/product.php">
+		<operation>
+			<search><![CDATA[$data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+       	        if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $product_info['price'] - $discoutPrice;
+					$data['price'] = $this->currency->format($this->tax->calculate($afterDiscount, $product_info['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));]]></search>
+			<add position="replace"><![CDATA[
+               	if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPriceSpecial = $this->config->get('catalogrules_price');
+					$afterDiscountSpecial = $product_info['special'] - $discoutPriceSpecial;
+					$data['special'] = $this->currency->format($this->tax->calculate($afterDiscountSpecial, $product_info['tax_class_id'], $this->config->get('config_tax')));
+			    }else
+			    {
+			        $data['special'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+			    }
+			]]></add>
+		</operation>
+	</file>
+	<file path="system/library/cart.php">
+		<operation>
+			<search><![CDATA[$price = $product_query->row['price'];]]></search>
+			<add position="replace"><![CDATA[
+   	       	    if($this->config->get('catalogrules_discount_status') == 1)
+				{
+					$discoutPrice = $this->config->get('catalogrules_price');
+					$afterDiscount = $product_query->row['price'] - $discoutPrice;
+					$price = $afterDiscount;
+			    }else
+			    {
+			        $price = $product_query->row['price'];
+			    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$price = $product_discount_query->row['price'];]]></search>
+			<add position="replace"><![CDATA[
+               	    if($this->config->get('catalogrules_discount_status') == 1)
+					{
+						$discoutPrice = $this->config->get('catalogrules_price');
+						$afterDiscountDefualt = $product_discount_query->row['price'] - $discoutPrice;
+						$price = $afterDiscountDefualt;
+				    }else
+				    {
+				       	$price = $product_discount_query->row['price'];
+				    }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$price = $product_special_query->row['price'];]]></search>
+			<add position="replace"><![CDATA[
+               	     if($this->config->get('catalogrules_discount_status') == 1)
+					{
+						$discoutPrice = $this->config->get('catalogrules_price');
+						$afterDiscountSpecial = $product_special_query->row['price'] - $discoutPrice;
+						$price = $afterDiscountSpecial;
+				    }else
+				    {
+				       	$price = $product_special_query->row['price'];
+				    }
+			]]></add>
+		</operation>
+	</file>
+</modification>	

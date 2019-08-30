@@ -1,0 +1,60 @@
+---------- Date: 2019-08-29 07:06:01 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=design/layout/edit&token=hFnAOrzOhT7KEYO9KbIsXuScmhRd3Jn2&layout_id=1
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-29 08:34:42 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=extension/module&token=Re8ElCvGYfJC2TspbGjawQxvCh5xUrj4
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-29 08:56:41 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=module/catalogruleslogo&token=Re8ElCvGYfJC2TspbGjawQxvCh5xUrj4
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-29 09:37:57 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=extension/installer&token=Re8ElCvGYfJC2TspbGjawQxvCh5xUrj4
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+

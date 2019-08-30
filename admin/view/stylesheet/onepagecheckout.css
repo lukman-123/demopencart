@@ -1,0 +1,16 @@
+.dropdown-menu > li > a {
+	padding: 6px 20px;
+}
+.nav-tabs .dropdown-menu{
+	min-width: 267px;
+}
+
+.form-horizontal .control-label {
+	padding-top: 5px;
+}
+
+.btn-success {
+	background-color: #fff;
+	color: #000;
+	border-color: #ddd;
+}

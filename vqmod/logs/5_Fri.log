@@ -1,0 +1,30 @@
+---------- Date: 2019-08-30 12:26:41 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=extension/modification&token=RS4jphk4aE4KhjunIsn98ZV8Ld7cC63L
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-30 12:29:45 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=sale/order/getShippedOrders&token=RS4jphk4aE4KhjunIsn98ZV8Ld7cC63L
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+

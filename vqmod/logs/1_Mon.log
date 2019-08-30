@@ -1,0 +1,45 @@
+---------- Date: 2019-08-26 09:17:00 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=module/catalogrules&token=Z1hihK5XTQRXd4KIwRILV9Twt2TIYce8
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-26 09:27:22 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/admin/index.php?route=extension/modification&token=Z1hihK5XTQRXd4KIwRILV9Twt2TIYce8
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/onepagecheckout.xml
+   id        : OnePage Checkout
+   version   : v2.0
+   vqmver    : 
+   author    : Extensions Bazaar
+
+File Name    : admin/controller/common/column_left.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $extension = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-26 09:45:53 ~ IP : ::1 ----------
+REQUEST URI : /lukman/oc_2101/index.php?route=product/product&path=74_75&product_id=839
+MOD DETAILS:
+   modFile   : /opt/lampp/htdocs/lukman/oc_2101/vqmod/xml/catalog_rules.xml
+   id        : Catalog Rules
+   version   : v2.0
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/controller/product/product.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+
+----------------------------------------------------------------------
+
+
